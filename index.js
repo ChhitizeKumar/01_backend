@@ -54,7 +54,7 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/github", (req, res) => {
-  res.send(githubData);
+  res.json(githubData);
 });
 
 app.listen(process.env.PORT, () => {
